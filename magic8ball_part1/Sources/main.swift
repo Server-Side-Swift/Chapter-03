@@ -30,13 +30,17 @@ func handler(data: [String:Any]) throws -> RequestHandler {
 
 		response.setHeader(.contentType, value: "text/html")
 
+		// Set question to value of form param "q"
 		let question = request.param(name: "q") ?? ""
+
+		// Execute if request method is "POST", and question is not empty.
 		if request.method == .post, !question.isEmpty {
 			var answer = "<p>\(question)</p>"
 			answer += "<h3>\(the8ball())</h3>"
-			response.setBody(string: answer)
+			response.appendBody(string: answer)
 		}
 
+		// Assemble HTML Form
 		var html = "<form method=\"POST\">"
 		html += "What question would you like to ask the Magic 8-Ball?"
 		html += "<br>"
