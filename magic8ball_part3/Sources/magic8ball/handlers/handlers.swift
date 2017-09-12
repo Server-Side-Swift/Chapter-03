@@ -12,7 +12,7 @@ import PerfectMustache
 
 class Handlers {
 
-	func handler(data: [String:Any]) throws -> RequestHandler {
+	static func handler(data: [String:Any]) throws -> RequestHandler {
 		return {
 			request, response in
 
@@ -37,7 +37,7 @@ class Handlers {
 		}
 	}
 
-	func mustacheHandler(data: [String:Any]) throws -> RequestHandler {
+	static func mustacheHandler(data: [String:Any]) throws -> RequestHandler {
 		return {
 			request, response in
 			var ctx = [String: Any]()
