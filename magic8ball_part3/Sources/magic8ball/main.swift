@@ -1,8 +1,8 @@
 //
 //  main.swift
-//  Magic 8-Ball
+//  Magic 8-Ball Project
 //
-//  Created by Jonathan Guthrie on 2017-08-01.
+//  Created by Jonathan Guthrie
 //	Copyright (C) 2017 PerfectlySoft, Inc.
 //
 //===----------------------------------------------------------------------===//
