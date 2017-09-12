@@ -1,0 +1,15 @@
+{{>header}}
+
+{{#answering}}
+	<p>{{question}}</p>
+	<h3>{{the8ball}}</h3>
+{{/answering}}
+
+<form method="POST">
+	What question would you like to ask the Magic 8-Ball?
+	<br>
+	<input type="text" name="q">
+	<input type="submit" value="Ask!">
+</form>
+
+{{>footer}}

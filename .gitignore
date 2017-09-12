@@ -1,0 +1,7 @@
+Package.pins
+magic8ball-part3/.build
+magic8ball-part3/magic8ball.xcodeproj
+PADockerfile_build
+magic8ball_part2/.build_lin
+magic8ball_part2/magic8ball.xcodeproj
+buildlinux
